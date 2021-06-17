@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup,Validators } from '@angular/forms';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +11,7 @@ export class SignupComponent implements OnInit {
   registerForm : FormGroup;
   submitted:boolean;
 
-  constructor(private formBuilder:FormBuilder) { 
+  constructor(private formBuilder:FormBuilder, private router:Router) { 
     this.submitted = false;
   }
 
@@ -35,7 +36,8 @@ export class SignupComponent implements OnInit {
     console.log(this.registerForm);
     console.log(this.registerForm.value);
     if(this.registerForm.status!=="INVALID"){
-      return confirm("Form Submitted");
+      confirm("Form Submitted");
+      this.router.navigate(['/']);
       }
 
     else{
