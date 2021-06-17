@@ -32,7 +32,15 @@ export class SignupComponent implements OnInit {
 
   handleSubmit(){
     this.submitted = true;
+    console.log(this.registerForm);
     console.log(this.registerForm.value);
+    if(this.registerForm.status!=="INVALID" && !this.registerForm.touched){
+      return confirm("Form Submitted");
+      }
+
+    else{
+      return confirm("Please Fill up the form");
+    }
   }
 
 }
