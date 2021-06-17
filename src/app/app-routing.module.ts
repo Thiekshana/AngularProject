@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { AngularComponent } from './angular/angular.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { ListOfRegisteredUsersComponent } from './list-of-registered-users/list-of-registered-users.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SignupComponent } from './signup/signup.component';
@@ -32,7 +33,7 @@ const routes: Routes = [
     path:'login', component:LoginComponent, canDeactivate:[UnsavedChangesGuard]
   },
   {
-    path:'signup', component:SignupComponent
+    path:'signup', component:ListOfRegisteredUsersComponent
   },
   {
     path:'**', component:PageNotFoundComponent

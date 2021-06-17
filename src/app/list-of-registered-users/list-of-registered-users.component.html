@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card-login-form">
+    <div class="card-body">
+      <app-signup (postUsersData) = "getRegisteredUsers($event)"></app-signup>
+      <h3 class="card-title text-center text-danger text-underline">List of Registered Users</h3>
+    </div>
+  </div>
+</div>
+<div class="container-md">
+<table class="table table-striped mt-5" style="text-align: center;border: 10px black">
+  <thead>
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Email</th>
+  <th>Country</th>
+  <th>Address</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let user of userData" >
+  <td>{{user.firstname}}</td>
+  <td>{{user.lastname}}</td>
+  <td>{{user.email}}</td>
+  <td>{{user.country}}</td>
+  <td>{{user.address}}</td>
+</tr>
+</tbody>
+</table>
+</div>

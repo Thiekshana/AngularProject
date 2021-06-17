@@ -23,6 +23,7 @@ import { LoginComponent } from './login/login.component';
 
 import { UnsavedChangesGuard } from './_guards/un-saved-changes-guard.service';
 import { SignupComponent } from './signup/signup.component';
+import { ListOfRegisteredUsersComponent } from './list-of-registered-users/list-of-registered-users.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { SignupComponent } from './signup/signup.component';
     PageNotFoundComponent,
     LoginComponent,
     SignupComponent,
+    ListOfRegisteredUsersComponent,
     
   ],
   imports: [

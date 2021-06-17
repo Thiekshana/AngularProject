@@ -12,6 +12,7 @@ import { CoursesNamesComponent } from './courses/courses-names/courses-names.com
 import { CoursesDescriptionsComponent } from './courses/courses-descriptions/courses-descriptions.component';
 import { CoursesHighlightComponent } from './courses/courses-highlight/courses-highlight.component';
 import { CoursesCardsComponent } from './courses/courses-cards/courses-cards.component';
+import { FeaturesHeaderComponent } from './features/features-header/features-header.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CoursesCardsComponent } from './courses/courses-cards/courses-cards.com
     CoursesNamesComponent,
     CoursesDescriptionsComponent,
     CoursesHighlightComponent,
-    CoursesCardsComponent
+    CoursesCardsComponent,
+    FeaturesHeaderComponent
   ],
   imports: [
     CommonModule,
