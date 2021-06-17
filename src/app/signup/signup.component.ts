@@ -34,7 +34,7 @@ export class SignupComponent implements OnInit {
     this.submitted = true;
     console.log(this.registerForm);
     console.log(this.registerForm.value);
-    if(this.registerForm.status!=="INVALID" && !this.registerForm.touched){
+    if(this.registerForm.status!=="INVALID"){
       return confirm("Form Submitted");
       }
 

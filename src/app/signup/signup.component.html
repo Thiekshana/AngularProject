@@ -22,8 +22,8 @@
         </div>
         <div class="form-group">
         <label for="email" class="form-label">Email</label> 
-        <input type="email" name="email" class="form-control" formControlName="email" [ngClass]="{'is-invalid':submitted && f.firstname.errors}">
-        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <input type="email" name="email" class="form-control" formControlName="email" [ngClass]="{'is-invalid':submitted && f.email.errors}">
+        <div *ngIf="f.email.errors" class="invalid-feedback">
           <div *ngIf="f.email.errors.required">Email should not be empty</div>
           <div *ngIf="f.email.errors.email">Please enter valid email</div>
           </div>
