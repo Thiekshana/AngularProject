@@ -2,11 +2,11 @@
   <div class="row">
     <div
       class="col-md-3"
-      *ngFor="let service of homeServices; trackBy: trackByFn"
+      *ngFor="let service of homeServices"
     >
       <div id="conc1">
         <img
-          src="../../assets/images/cards/{{ service.imgName }}"
+          src="assets/images/cards/{{ service.imgName }}"
           class="card-img-top"
           alt="..."
           style="height: 50px; width: 50px;"
