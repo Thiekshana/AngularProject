@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+		<img src="../../assets/images/angular_logo.png" alt="" class="d-inline-block align-text-top">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" routerLinkActive="active">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" routerlink="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="users" href="#">Users</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink="angular" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Angular
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/angular/courses" href="#">Courses</a></li>
+            <li><a class="dropdown-item" routerLink="/angular/features" href="#">Features</a></li>
+            <li><a class="dropdown-item" routerLink="/angular/projects" href="#">Projects</a></li>
+          </ul>
+        </li>
+
+        <a href="angular" class="btn btn-secondary btn-md" tabindex="-1" role="button" aria-disabled="true">Compare Versions</a>
+      </ul>
+    </div>
+  </div>
+</nav>

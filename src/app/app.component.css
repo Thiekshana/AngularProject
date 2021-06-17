@@ -1,0 +1,26 @@
+header,
+header nav ul{
+  display:flex;
+}
+
+header div{
+  flex: 1;
+}
+
+header nav{
+  flex: 11;
+}
+
+header nav li{
+  flex: 1;
+}
+
+li{
+  list-style: none;
+}
+
+nav ul li a{
+  color:blue;
+  font-size:26px;
+}
+

@@ -1,0 +1,622 @@
+<div class="twoCol">
+  <div class="row">
+    <div
+      class="col-md-3"
+      *ngFor="let service of homeServices; trackBy: trackByFn"
+    >
+      <div id="conc1">
+        <img
+          src="../../assets/images/cards/{{ service.imgName }}"
+          class="card-img-top"
+          alt="..."
+          style="height: 50px; width: 50px;"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ service.title }}</h5>
+          <p class="card-text">{{ service.description }}</p>
+          <a
+            href="#"       
+            class="btn btn-primary" 
+            [ngStyle]="{ 'background-color': 'red' }"
+            (click) = "componentRedirect(service.routerlink)"
+          >
+            View More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="gallery">
+  <div class="row cards">
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="./assets/images//cards/bg3.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 1.X</h5>
+          <p class="card-text">AngularJS is the first version of the framework developed by Google, which was released in 2010.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod1">View more</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="./assets/images//cards/bg3.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 2.X</h5>
+          <p class="card-text">The release of Angular 2 generated numerous changes to the initial framework.This framework is open source.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod2">View more</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="./assets/images//cards/bg3.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 4.X</h5>
+          <p class="card-text">In Angular 4.X, production bundle size reduced by 60%.It enables a fast development process.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod4">View more</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row cards">
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="./assets/images//cards/bg2.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 5.X</h5>
+          <p class="card-text">Angular team recently announced its latest version Angular 5.0 on November 1, 2017.<p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod5">View more</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="./assets/images//cards/bg2.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 6.X</h5>
+          <p class="card-text">Angular 6 includes the Component Development Kit , Angular CLI , & Angular Material Package Update.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod6">View more</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="./assets/images//cards/bg2.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 7.X</h5>
+          <p class="card-text">Angular 7.X has bought certain attractive features that made this framework unique. </p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod7">View more</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="./assets/images//cards/bg2.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 8.X</h5>
+          <p class="card-text">The Angular community has released Angular 8 with an impressive list of changes.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod8">View more</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row cards">
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="./assets/images//cards/bg1.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 9.X</h5>
+          <p class="card-text">all the existing drawbacks have been modified. Lot of factors have affected the previous versions of Angular.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod9">View more</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="./assets/images//cards/bg1.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 10.X</h5>
+          <p class="card-text">Angular 10 provides a stricter project setup for making a new workspace using ng new.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod10">View more</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="./assets/images//cards/bg1.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 11.X</h5>
+          <p class="card-text">The major features of this version are router performance improvements and stricter types.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod11">View more</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="./assets/images//cards/bg1.jpg" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-img-overlay">
+        <div class="card-body">
+          <h5 class="card-title">Angular 12.X</h5>
+          <p class="card-text">Angular 12 is smaller, faster, and easier to use. It will be making Angular developer's life easier.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod12">View more</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <!--Modals-->
+  <div class="modal fade" id="mod1" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 1.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>AngularJS is the first version of the framework developed by Google, which was released in 2010</h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>Two-way data binding is a powerful feature</li>
+                  <li>If a change happens to this object, it’s updated in the view</li>
+                  <li>If the view changes values, it’s updated on the $scope object, as well as all other view references</li>
+                </ul>
+              </div>
+             
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>high performance cost</li>
+                  <li>Inability to compose many NG-apps on the same page. This can cause name clashes</li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="mod2" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 2.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>The release of Angular 2 generated numerous changes to the initial framework, as it was rewritten in TypeScript and it supported mobile. </h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>Angular 2 encourages using unidirectional data flow.</li>
+                  <li>Angular 2 is Easier.TypeScript allows code optimization using the OOPS concept.</li>
+                  <li>It is mobile-oriented.</li>
+                </ul>
+              </div>
+             
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>Migrating the application to Angular 2 required too many modifications due to different syntax</li>
+                  <li>Application size reduction and syntax changes made it impossible to simply upgrade from AngularJS to the new version</li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="mod4" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 4.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>In Angular 4.X, production bundle size reduced by 60%.It enables a fast development process.</h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>It enables a fast development process.</li>
+                  <li>Full TypeScript support helps in building bulky applications.</li>
+                  <li>Tests are easy to write.</li>
+                </ul>
+              </div>
+             
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>It’s slow when displaying enormous amounts of data.</li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="mod5" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 5.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>The release of fifth version concentrated on optimizing Angular CLI and compiler work.</h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>Simpler Progressive Web Applications</li>
+                  <li>Material Design</li>
+                  <li>Build optimizer</li>
+                  <li>Angular Universal API and DOM</li>
+                </ul>
+              </div>
+             
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>Seems a bit difficult to switch from one version to another like it was in previous cases</li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="mod6" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 6.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Angular 6 was released on May 4, 2018. It includes the Component Development Kit (CDK), Angular CLI (Command Line Interface), and Angular Material Package Update</h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>TypeScript 2.7+ support</li>
+                  <li>Stable Angular Material with CDK ( Component Development Kit)</li>
+                  <li>Ivy renderer</li>
+                  <li>Bazel Compiler</li>
+                  <li>Addition of navigationSource and restoredState to NavigationStart</li>  
+                </ul>
+              </div>
+             
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>limited SEO options and poor accessibility for search engine crawlers. </li>
+                  <li>Difficult to learn</li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="mod7" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 7.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>This new release of the web application development framework has bought certain attractive features that made this framework unique as compared to its previous versions</h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>CLI Prompts</li>
+                  <li>Enhanced Application Performance</li>
+                  <li>Improved accessibility for selects</li>
+                </ul>
+              </div>
+             
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>Not supported for Node 10</li>
+                  <li>Slower than Angular 8</li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="mod8" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 8.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>The Angular community has released Angular 8 with an impressive list of changes and improvements including the much awaited Ivy compiler as an opt-in feature.</h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>Support TypeScript 3.4</li>
+                  <li>Supports Web Workers</li>
+                  <li>Preview of Ivy available</li>
+                  <li>Lazy loading</li>
+                </ul>
+              </div>
+             
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>There is no precise manual and extensive, all-inclusive documentation</li>
+                  <li>Steep learning curve</li>
+                  <li>Third-party integration is complicated.</li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="mod9" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 9.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>With Angular9, all the existing drawbacks have been modified. Lot of factors have affected the previous versions of Angular.</h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>Amazing Debugging</li>
+                  <li>Faster Performance</li>
+                  <li>Better Testing</li>
+                  <li>Completely new CSS class and Style Binding</li>
+                </ul>
+              </div>
+             
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>Decline in popularity</li>
+                  <li>Lot of boilerplate code</li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="mod10" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 10.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Angular 10 provides a stricter project setup for making a new workspace using ng new.</h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>Optional Stricter Settings</li>
+                  <li>New Features ie: Date Range Picker</li>
+                  <li>Enhanced Community Engagement</li>
+                  <li>Boost in ngcc Performance</li>
+                  <li>Removals and Corrections</li>
+                </ul>
+              </div>
+             
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>Angular 10 does not contain the positive jsdoc remarks from the NPM for assisting the advanced optimization of a closure compiler. </li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="mod11" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 11.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>The major features of this version are router performance improvements, automatic inlining of fonts and stricter types.</h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>Updated Hot Module Replacement (HMR) Support</li>
+                  <li>Updates on Operation Byelog</li>
+                  <li>Automatic Inlining of Fonts</li>
+                  <li>Faster Builds</li>
+                  <li>Webpack 5 Support</li>              
+                </ul>
+              </div>   
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>Angular 11 has dropped the support for TypeScript 3.9 and only supports TypeScript 4.0</li>
+                  <li>DisAdv2</li>
+                  <li>DisAdv3</li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="mod12" tabindex="-1" aria-labelledby="mod1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod1Label">Angular 12.X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Angular 12 is smaller, faster, and easier to use. It will be making Angular developer's life easier.</h6>
+            <hr/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Advantages</h6>
+                <ul>
+                  <li>Better Developer Ergonomics @angular/forms</li>
+                  <li>Better developer ergonomics with strict typing for @angular/forms</li>
+                  <li>Reducing Framework Overheard by Removing Legacy</li>
+                  <li>Leverage full framework capabilities with Zone.js opt-out</li>
+                  <li>Improved build performance with ngc as a tsc plugin distribution</li>
+                </ul>
+              </div>
+             
+              <div class="col-md-6">
+                <h6>Disadvantages</h6>
+                <ul>
+                  <li>Deprecating Support for IE11</li>
+                </ul>
+  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

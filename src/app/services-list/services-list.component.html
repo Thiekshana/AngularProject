@@ -1,0 +1,29 @@
+<div class="twoCol">
+  <div class="row">
+    <div
+      class="col-md-3"
+      *ngFor="let service of homeServices; trackBy: trackByFn"
+    >
+      <div id="conc1">
+        <img
+          src="../../assets/images/cards/{{ service.imgName }}"
+          class="card-img-top"
+          alt="..."
+          style="height: 50px; width: 50px;"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ service.title }}</h5>
+          <p class="card-text">{{ service.description }}</p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            (click)="handleView(service.title)"
+            [ngStyle]="{ 'background-color': 'red' }"
+          >
+            View More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
